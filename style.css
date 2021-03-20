@@ -33,6 +33,7 @@ body {
 }
 
 .component {
+   width: 64rem;
    border-radius: .5rem;
    box-shadow: 0 .3rem 1rem .2rem rgba(0, 0, 0, 0.171);
    overflow: hidden; /*??*/
@@ -58,8 +59,8 @@ body {
 }
 
 .parte1-info {
+   max-width: 58ch;
    color: var(--Grayish-Blue);
-   max-width: 60ch;
 }
 
 
@@ -138,6 +139,7 @@ body {
 @media (max-width:768px) {
    .component{
       width: 37.5rem;
+      min-width: 37.5rem;
    }
 
    .parte2 {
