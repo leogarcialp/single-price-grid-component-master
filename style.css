@@ -1,0 +1,159 @@
+:root {
+   --Cyan: #2bb3b1;
+   --Cyan-light: #4abebd;
+   --Bright-Yellow: hsl(71, 73%, 54%);
+   --Light-Gray: hsl(204, 43%, 93%);
+   --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   background-color: var(--Light-Gray);
+   font-size: 1.6rem;
+   font-family: 'Karla', sans-serif;
+}
+
+
+/* ====================================== */
+/* Estilos */
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 90rem;
+}
+
+.component {
+   border-radius: .5rem;
+   box-shadow: 0 .3rem 1rem .2rem rgba(0, 0, 0, 0.171);
+   overflow: hidden; /*??*/
+}
+
+
+/* ======== */
+/* Parte1 */
+.parte1 {
+   background-color: white;
+   padding: 4rem 3rem;
+   line-height: 1.5;
+}
+
+.parte1-title {
+   margin-bottom: 1.5rem;
+   color: var(--Cyan);
+}
+
+.parte1-subtitle {
+   margin-bottom: 1rem;
+   color: var(--Bright-Yellow);
+}
+
+.parte1-info {
+   color: var(--Grayish-Blue);
+   max-width: 60ch;
+}
+
+
+/* ========= */
+/* Parte2 */
+.parte2 {
+   display: flex;
+   color: white;
+}
+
+
+.split {
+   width: 50%;
+   padding: 3rem;
+}
+
+/* LEFT */
+.parte2-left {
+   background-color: var(--Cyan);
+}
+
+.parte2-title {
+   margin-bottom: 1.5rem;
+}
+
+.precio {
+   margin-bottom: 1rem;
+   font-size: 3rem;
+   font-weight: 700;
+}
+
+.precio span {
+   margin-left: 1rem;
+   font-size: initial;
+   font-weight: 300;
+   color: hsl(204, 43%, 85%);
+}
+
+.parte2-info {
+   font-weight: 300;
+   margin-bottom: 3rem;
+}
+
+.btn-signup {
+   display: block; /*quitar*/
+   padding: 1.5rem 1rem; /* 1.5 y 9 */
+   text-align: center;
+   text-decoration: none;
+   background-color: var(--Bright-Yellow);
+   color: white;
+   border-radius: .5rem;
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.171);
+
+}
+
+/* RIGHT */
+.parte2-right {
+   background-color: var(--Cyan-light);
+}
+
+.beneficios {
+   font-size: 1.3rem;
+   font-weight: 300;
+   line-height: 1.5;
+   color: hsl(204, 43%, 90%);
+}
+
+.beneficios li {
+   list-style: none;
+}
+
+
+/* =================================== */
+/* Media Queries */
+/* Mobile */
+@media (max-width:768px) {
+   .component{
+      width: 37.5rem;
+   }
+
+   .parte2 {
+      flex-direction: column;
+   }
+
+   .split {
+      width: 100%;
+   }
+
+   .parte1-subtitle {
+      margin-bottom: 2rem;
+   }
+
+   .parte1-info {
+      line-height: 1.8;
+   }
+
+}
